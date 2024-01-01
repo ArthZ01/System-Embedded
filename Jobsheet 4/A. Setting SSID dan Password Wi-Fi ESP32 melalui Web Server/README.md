@@ -27,18 +27,13 @@
    
    ![Serial Monitor Setelah Berhasil Terhubung](https://github.com/JustBadrun/Embeded_System/assets/128286595/edbb574a-82a5-4bf2-94b3-53a66fee9daa)
 
-### Pembahasan Kode
-#### **Fungsi Utama Kode:**
+### Pembahasan
 
-  * Menghubungkan perangkat ke jaringan WiFi.
-  * Memberikan opsi untuk mengubah kredensial WiFi melalui halaman web jika koneksi gagal.
-
-#### **Penjelasan Alur Kode:**
-  1. Setup Awal:
-  * Memulai komunikasi serial untuk monitoring.
-  * Menginisialisasi EEPROM untuk penyimpanan data.
-  * Membaca kredensial WiFi yang tersimpan di EEPROM.
-  * Mencoba menghubungkan ke WiFi menggunakan kredensial tersebut.
+  1. Bagian Awal:
+  * Memasukkan library yang diperlukan:
+     * 'WiFi.h': untuk mengakses fungsi Wi-Fi.
+     * Membaca kredensial WiFi yang tersimpan di EEPROM.
+     * Mencoba menghubungkan ke WiFi menggunakan kredensial tersebut.
 
   2. Loop Utama:
   * Jika terkoneksi ke WiFi:
