@@ -14,15 +14,16 @@
 
 
 ## 3. Flow Program
-![flow program ](https://github.com/JustBadrun/Embeded_System/assets/128286595/ddcda868-d0a5-4d99-b021-15370a3a6e8b)
+![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/5a4526ba-f8e2-4cdd-b02a-6704872a7403)
+
 
 ## 4. Hasil & Penjelasan Percobaan Kontrol Nyala LED Melalui Dashboard Node-RED
 ### Dokumentasi Percobaan
 
 1. Flow chart program ESP32
    
-  ![flow program ](https://github.com/JustBadrun/Embeded_System/assets/128286595/8416db68-b655-4562-9c90-fedd291b8952)
-   
+  ![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/7db33564-d846-4c57-ad71-42562765d82c)
+
 2. Dokumentasi
    
    ![WhatsApp Image 2023-12-22 at 08 21 04_01c9056c](https://github.com/JustBadrun/Embeded_System/assets/128286595/13547144-2d63-43d3-8adb-016d78373858)
@@ -39,8 +40,11 @@
    
   ![WhatsApp Image 2023-12-22 at 08 22 13_1d17d3e7](https://github.com/JustBadrun/Embeded_System/assets/128286595/473009bc-0983-4b1b-9a15-ea96e908a5a0)
 
-### Penjelasan Kode
-![beautify-picture (1)](https://github.com/JustBadrun/Embeded_System/assets/128286595/b7ad94c3-3f76-43f4-a538-ed8f82348a06)
+### Kode
+![carbon (2)](https://github.com/ArthZ01/System-Embedded/assets/91934953/afaeef6d-5159-4916-89c9-98757bc551f4)
+
+### Pembahasan
+
 
 Kode di atas adalah program ESP32 yang menggunakan modul WiFi untuk mengukur suhu dan mengontrol LED melalui protokol MQTT. Berikut penjelasan singkat untuk setiap bagian dari kode tersebut:
 
