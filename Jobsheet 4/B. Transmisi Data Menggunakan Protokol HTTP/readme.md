@@ -8,26 +8,26 @@
 ## 2. Source Code
 
 1. Code JSON Multi-Protocol IoT Server dapat dilihat <a href="https://github.com/ArthZ01/System-Embedded/blob/b0a720c8346aca387e8e5960110c174ae2e1a92a/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/flow%20program%20Multi-Protocol%20IoT.json">disini</a>
-2. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode GET dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/9ab6346c50179de04fe61cd0294bd7dd65c6f647/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get.ino">disini</a>
-3. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode POST dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/f67159702c58767bad46a8e4fbd698aec8c29349/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST.ino">disini</a>
+2. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode GET dapat dilihat <a href="https://github.com/ArthZ01/System-Embedded/blob/05864b09d785d0e0f36e0ccaa11523e064d9bc64/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get.ino">disini</a>
+3. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode POST dapat dilihat <a href="https://github.com/ArthZ01/System-Embedded/blob/05864b09d785d0e0f36e0ccaa11523e064d9bc64/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST.ino">disini</a>
 
 ## 3. Flow Program
-![flow program ](https://github.com/JustBadrun/Embeded_System/assets/128286595/aa591bb8-08f0-440f-9152-8d4e04e4d1ef)
+![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/ac860919-0392-45c8-a527-093cc3f913d2)
 
 
 ## 4. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode GET
 ### Dokumentasi Percobaan
 
 1. Flow chart program ESP32
-   
-   ![Flow Get](https://github.com/JustBadrun/Embeded_System/assets/128286595/a980cef2-565c-4529-8f59-ddac44928c39)
+
+   ![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/27f1885b-2950-40f1-91dd-9530ad3477bb)
 
    
-2. Output serial monitor
+3. Output serial monitor
    
    ![serial monitor-metode get](https://github.com/JustBadrun/Embeded_System/assets/128286595/95efca05-5381-4659-a18d-ee3517cd6221)
    
-3. Debug Node-RED
+4. Debug Node-RED
    
   ![debug-metode GET](https://github.com/JustBadrun/Embeded_System/assets/128286595/3980b3b8-1f65-49ba-97c3-d55c6d86a056)
    
@@ -140,7 +140,8 @@ Kode tersebut adalah program ESP32 yang menggunakan perangkat WiFi (menggunakan 
 
 1. Flow chart program ESP32
    
-   ![Flow Post](https://github.com/JustBadrun/Embeded_System/assets/128286595/54bf9f70-120b-4e56-a098-3a1d57006b04)
+   ![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/0a1bb33d-8ae1-4585-bbd1-a79d160469dc)
+
 
 2. Output serial monitor
    
