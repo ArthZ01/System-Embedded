@@ -1,24 +1,21 @@
 # B. Transmisi Data Menggunakan Protokol HTTP
-
-## 1. Keterangan Singkat (Abstrak)
-<p align="justify">Percobaan ini dimulai dengan pembuatan database lokal "banjir_db" dan tabel "smartwater" menggunakan phpMyAdmin. Lalu diberikan kode JSON untuk flow program Multi-Protocol IoT Server yang perlu diimport di Node-RED. Selanjutnya, melalui program pada ESP32 dilakukan transmisi data dummy ke Node-Red menggunakan protokol HTTP metode GET dan protokol HTTP metode POST. Output dari percobaan ini berupa hasil dari serial monitor, debugging Node-Red, dan tampilan dashboard Node-RED.
    
-## 2. Alat dan Bahan
+## 1. Alat dan Bahan
 1. Node-RED
 2. ESP32
 3. XAMPP
 
-## 3. Source Code
+## 2. Source Code
 
 1. Code JSON Multi-Protocol IoT Server dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/014c31a7786acec166eb84f8575ea29c590a43d6/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/flow%20program%20Multi-Protocol%20IoT.json">disini</a>
 2. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode GET dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/9ab6346c50179de04fe61cd0294bd7dd65c6f647/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get/transmisi_data_dummy_keNode-Red_protokol_HTTP_metode_Get.ino">disini</a>
 3. Program ESP32 transmisi data dummy menggunakan protokol HTTP metode POST dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/f67159702c58767bad46a8e4fbd698aec8c29349/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST/transmisi_data_dummy_ke_Node-Red_protokol_HTTP_metode_POST.ino">disini</a>
 
-## 4. Flow Program
+## 3. Flow Program
 ![flow program ](https://github.com/JustBadrun/Embeded_System/assets/128286595/aa591bb8-08f0-440f-9152-8d4e04e4d1ef)
 
 
-## 5. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode GET
+## 4. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode GET
 ### Dokumentasi Percobaan
 
 1. Flow chart program ESP32
@@ -138,7 +135,7 @@ Kode tersebut adalah program ESP32 yang menggunakan perangkat WiFi (menggunakan 
    ```
    Fungsi loop yang berjalan terus-menerus setelah fungsi setup selesai. Dalam loop ini, terdapat logika untuk mengirimkan permintaan HTTP GET ke server setiap 5 detik. Informasi seperti `dev_id`, `level`, `rainfall`, dan `flow` diatur secara manual dan dapat disesuaikan sesuai kebutuhan aplikasi. Jika koneksi WiFi terputus, pesan "WiFi Disconnected" akan dicetak.
 
-## 6. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode POST
+## 5. Hasil Percobaan Transmisi Data Dummy Menuju Node-Red Menggunakan Protokol HTTP Metode POST
 ### Dokumentasi Percobaan
 
 1. Flow chart program ESP32
