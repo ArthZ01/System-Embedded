@@ -1,25 +1,22 @@
 # D. Akuisi Data dan Kendali Perangkat IoT Menggunakan Protokol MQTT
-
-## 1. Keterangan Singkat (Abstrak)
-<p align="justify">Dalam percobaan ini program ESP32 menggunakan protokol MQTT untuk mengakuisisi data sensor dan mengendalikan perangkat, seperti LED, melalui topik-topik MQTT. Setelah program diupload, dilakukan pemantauan melalui serial monitor dan dashboard Node-Red untuk mengendalikan nyala LED melalui tombol switch pada dashboard.
    
-## 2. Alat dan Bahan
+## 1. Alat dan Bahan
 1. Node-RED
 2. ESP32
 3. Kabel jumper
 4. LED
 5. XAMPP
 
-## 3. Source Code
+## 2. Source Code
 
 1. Code JSON Multi-Protocol IoT Server dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/dd513af13ce3906220b904cf8b1522e06d7a0c23/Jobsheet%204/B.%20Transmisi%20Data%20Menggunakan%20Protokol%20HTTP/flow%20program%20Multi-Protocol%20IoT.json">disini</a>
 2. Program ESP32 kontrol nyala LED melalui dashboard Node-RED dapat dilihat <a href="https://github.com/JustBadrun/Embeded_System/blob/5de87485d941e0818fd193cdf1d823249256daca/Jobsheet%204/D.%20Akuisi%20Data%20dan%20Kendali%20Perangkat%20IoT%20Menggunakan%20Protokol%20MQTT/akuisisi/akuisisi.ino">disini</a>
 
 
-## 4. Flow Program
+## 3. Flow Program
 ![flow program ](https://github.com/JustBadrun/Embeded_System/assets/128286595/ddcda868-d0a5-4d99-b021-15370a3a6e8b)
 
-## 5. Hasil & Penjelasan Percobaan Kontrol Nyala LED Melalui Dashboard Node-RED
+## 4. Hasil & Penjelasan Percobaan Kontrol Nyala LED Melalui Dashboard Node-RED
 ### Dokumentasi Percobaan
 
 1. Flow chart program ESP32
