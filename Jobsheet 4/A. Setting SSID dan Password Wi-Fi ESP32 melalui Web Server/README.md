@@ -9,8 +9,7 @@
 ![carbon](https://github.com/ArthZ01/System-Embedded/assets/91934953/04ddce1f-fa0f-48d8-9295-02b5e6397f86)
 
 ## 3. Flowchart
-![jobsheet 4 A flowchart](https://github.com/Aisyahnurul/AisyahN-system-embedded/assets/147674662/26b1622e-6ddd-42bb-a2b7-6e63fca710a7)
-
+![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/1e246dd2-3f88-4d13-83d0-e5a9dce4ecd4)
 
 ## 4. Hasil dan Pembahasan
 ### Dokumentasi Hasil
