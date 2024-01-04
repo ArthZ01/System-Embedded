@@ -42,4 +42,41 @@
 ![Penjelasan Kode](https://github.com/ArthZ01/System-Embedded/assets/91934953/bce2d89a-1422-4f42-99e6-76cb8ad0fb6d)
 
 ### Pembahasan
+1. Bagian Awal:
+   * Memasukkan library yang diperlukan:
+     * `WiFi.h` untuk mengakses fungsi Wi-Fi.
+     * `PubSubClient.h` untuk komunikasi MQTT.
+     * `ArduinoJson.h` untuk menangani format JSON.
+   * Deklarasi variabel:
+     * `ssid` dan `password` untuk menyimpan nama dan password Wi-Fi.
+     * `mqtt_server` untuk menyimpan alamat server MQTT.
+     * `espClient` untuk membuat koneksi TCP/IP ke server MQTT.
+     * `client` untuk komunikasi MQTT.
 
+2. Fungsi `setup_wifi()`:
+   * Menghubungkan board Arduino ke jaringan Wi-Fi dengan nama dan password yang telah ditentukan.
+   * Menampilkan informasi IP Address yang didapatkan oleh board Arduino.
+     
+3. Fungsi `reconnect()`:
+   * Mencoba menghubungkan board Arduino ke server MQTT.
+   * Jika gagal, mencoba kembali setiap 5 detik.
+
+4. Fungsi `setup()`:
+   * Menginisialisasi Serial Monitor untuk menampilkan pesan.
+   * Menghubungkan board Arduino ke Wi-Fi.
+   * Mengatur server MQTT yang akan dituju
+
+5. Fungsi loop():
+   * Memeriksa apakah koneksi MQTT masih tersambung.
+   * Jika terputus, memanggil fungsi `reconnect()` untuk menyambung kembali.
+   * Menangani proses MQTT secara berkala.
+   * Mempersiapkan data yang akan dikirimkan dalam format JSON.
+   * Menerbitkan data ke topic "flood/node1" pada server MQTT.
+   * Menunggu 10 detik sebelum mengirimkan data berikutnya.
+
+Catatan:
+   * Kode ini menggunakan protokol MQTT untuk mengirimkan data sensor atau informasi lain dari board Arduino ke server secara berkala.
+   * Interval pengiriman data diatur dalam fungsi `loop()` (10 detik dalam kode ini).
+   * Data yang dikirimkan dalam format JSON.
+   * Server MQTT yang digunakan adalah `broker.hivemq.com`.
+   * Kode ini dapat digunakan untuk aplikasi IoT yang membutuhkan komunikasi dua arah yang ringan dan efisien.
