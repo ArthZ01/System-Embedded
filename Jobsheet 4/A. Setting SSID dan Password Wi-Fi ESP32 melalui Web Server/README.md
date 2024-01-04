@@ -6,25 +6,33 @@
 
 ## 2. Source Code
 
-![carbon](https://github.com/ArthZ01/System-Embedded/assets/91934953/04ddce1f-fa0f-48d8-9295-02b5e6397f86)
+<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/2db0b857-5e73-4955-a12c-b65fec459779" height=1000rem>
+
 
 ## 3. Flowchart
-![image](https://github.com/ArthZ01/System-Embedded/assets/91934953/1e246dd2-3f88-4d13-83d0-e5a9dce4ecd4)
+
+<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/8286f7b0-52ad-4662-9eb9-9feac8efd2d0" height=700rem>
 
 ## 4. Hasil dan Pembahasan
 ### Dokumentasi Hasil
 1. Tampilan Awal Serial Monitor Sebelum Dihubungkan
 
-   ![Tampilan Awal Serial Monitor](https://github.com/JustBadrun/Embeded_System/assets/128286595/6edc74a3-184d-4e5f-96cb-4947f2bd473a)
+   ![1  Tampilan Awal Serial Monitor Sebelum Dihubungkan](https://github.com/ArthZ01/System-Embedded/assets/91934953/00a64629-aaed-4876-8403-c0e9d0839872)
+
 2. Tampilan Web
-   
-   ![Tampilan Web](https://github.com/JustBadrun/Embeded_System/assets/128286595/0da30011-d430-45cf-b6d4-a1c536ae52fc)
+
+   ![2  tampilan web](https://github.com/ArthZ01/System-Embedded/assets/91934953/b1f7d66e-bfef-45f3-a4d7-6b5a824b09e2)
+
 3. Serial Monitor Setelah Memasukkan SSID dan PASS
+
+   ![SSID dan Pass](https://github.com/ArthZ01/System-Embedded/assets/91934953/371172c6-b42d-47f1-953c-8e28cff1680d)
+
+   ![3  serial monitor setelah memasukan ssid dan pass](https://github.com/ArthZ01/System-Embedded/assets/91934953/51e90c6f-72ea-468b-b1d5-dcd2800f2f56)
    
-   ![Serial Monitor Setelah Memasukkan SSID dan PASS](https://github.com/JustBadrun/Embeded_System/assets/128286595/b5b6295a-249e-4deb-8f9d-94e9efa34cd5)
 4. Serial Monitor Setelah Berhasil Terhubung
-   
-   ![Serial Monitor Setelah Berhasil Terhubung](https://github.com/JustBadrun/Embeded_System/assets/128286595/edbb574a-82a5-4bf2-94b3-53a66fee9daa)
+
+   ![4  Serial Monitor Setelah Berhasil Terhubung](https://github.com/ArthZ01/System-Embedded/assets/91934953/6bb90203-f938-451f-8f63-ec08a626a5ed)
+
 
 ### Pembahasan
 
