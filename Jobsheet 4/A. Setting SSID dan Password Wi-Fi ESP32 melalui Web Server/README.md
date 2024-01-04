@@ -19,8 +19,9 @@
 
    ![1  Tampilan Awal Serial Monitor Sebelum Dihubungkan](https://github.com/ArthZ01/System-Embedded/assets/91934953/00a64629-aaed-4876-8403-c0e9d0839872)
 
-2. Tampilan Web
+2. Tampilan Web & WiFi
 
+   ![tampilan wifi](https://github.com/ArthZ01/System-Embedded/assets/91934953/b9bfab62-391f-494b-9dac-bbf6bda4ef51)
    ![2  tampilan web](https://github.com/ArthZ01/System-Embedded/assets/91934953/b1f7d66e-bfef-45f3-a4d7-6b5a824b09e2)
 
 3. Serial Monitor Setelah Memasukkan SSID dan PASS
