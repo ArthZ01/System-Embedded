@@ -113,46 +113,58 @@ Catatan:
    <img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/69f41a3e-0c2f-4ef1-af93-529e83ef68ed" width=80% height=80%>
 
 ### Source Code
-<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/cc612bab-186e-4932-8c1c-4880c186b777">
+<img src="https://github.com/ArthZ01/System-Embedded/assets/91934953/6b887c29-1601-4ff9-bd61-bd6825bddcb7" height=1000rem>
 
 ### Pembahasan
 
 1. Bagian Awal:
    * Memasukkan library yang diperlukan:
      * `WiFi.h` untuk mengakses fungsi Wi-Fi.
-     * `PubSubClient.h` untuk komunikasi MQTT.
-     * `ArduinoJson.h` untuk membuat dan memproses data JSON.
+     * `HTTPClient.h` untuk membuat permintaan HTTP.
    * Deklarasi variabel:
      * `ssid` dan `password` untuk menyimpan nama dan password Wi-Fi.
-     * `mqtt_server` untuk menyimpan alamat server MQTT.
-     * `espClient` untuk membuat klien Wi-Fi.
-     * `client` untuk membuat klien MQTT.
+     * `serverName` untuk menyimpan alamat server yang akan dituju.
+     * `lastTime` untuk menyimpan waktu terakhir pengiriman data.
+     * `timerDelay` untuk mengatur interval pengiriman data (dalam milisekon).
        
-2. Fungsi `setup_wifi()`:
-   * Menghubungkan board Arduino ke jaringan Wi-Fi.
-   * Menampilkan informasi IP Address yang didapatkan.
-     
-3. Fungsi `reconnect()`:
-   * Menghubungkan kembali ke server MQTT jika terputus.
-   * Membuat client ID secara acak untuk identifikasi unik.
-     
-4. Fungsi `setup()`:
-   * Menginisialisasi Serial Monitor untuk menampilkan pesan.
-   * Menghubungkan ke Wi-Fi menggunakan fungsi `setup_wifi()`.
-   * Mengatur server MQTT yang akan dituju.
-     
-5. Fungsi `loop()`:
-   * Memeriksa koneksi MQTT, jika terputus akan memanggil fungsi `reconnect()`.
-   * Menangani proses komunikasi MQTT secara otomatis.
-   * Mempersiapkan data JSON yang akan dikirimkan:
-     * Membuat objek JSON dengan nilai `dev_id`, `level`, `rainfall`, dan `flow`.
-     * Mengonversi objek JSON ke string dan menyimpannya dalam variabel payload.
-   * Mengirimkan data menggunakan metode PUBLISH ke topic "flood/node1".
-   * Menunggu selama 10 detik sebelum mengirimkan data berikutnya.
-     
+2. Fungsi `setup()`:
+   * Inisialisasi Serial Monitor:
+     * `Serial.begin(115200)` untuk menampilkan pesan di Serial Monitor.
+   * Menghubungkan ke Wi-Fi:
+     * `WiFi.begin(ssid, password)` untuk menghubungkan board Arduino ke jaringan Wi-Fi.
+   * Menunggu hingga tersambung ke Wi-Fi:
+     * Program akan menunggu hingga koneksi Wi-Fi berhasil sebelum melanjutkan.
+   * Menampilkan informasi IP Address:
+     * Program menampilkan IP Address yang didapatkan oleh board Arduino.
+   * Menginformasikan pengaturan timer:
+     * Program menampilkan pesan yang menunjukkan interval pengiriman data.
+       
+3. Fungsi `loop()`:
+   * Mengirim data setiap interval tertentu:
+     * Program akan memeriksa apakah waktu yang telah berlalu sejak pengiriman data terakhir melebihi `timerDelay`. Jika iya, maka akan dilakukan pengiriman data.
+   * Memeriksa status koneksi Wi-Fi:
+     * Jika board Arduino masih terhubung ke Wi-Fi, maka proses pengiriman data akan dilanjutkan.
+   * Membuat client HTTP:
+     * `WiFiClient client` membuat objek client untuk komunikasi HTTP.
+     * `HTTPClient http` membuat objek untuk melakukan permintaan HTTP.
+   * Menentukan server tujuan:
+     * `http.begin(client, serverName)` menetapkan server yang akan dituju untuk pengiriman data.
+   * Menentukan header Content-Type:
+     * `http.addHeader("Content-Type", "application/json")` menetapkan format data yang dikirimkan adalah JSON.
+   * Mempersiapkan data yang akan dikirimkan:
+     * String `httpRequestData` menyimpan data dalam format JSON yang akan dikirimkan. Dalam kode ini, data yang dikirimkan berupa nilai `dev_id`, `level`, `rainfall`, dan `flow`.
+   * Mengirim permintaan HTTP POST:
+     * `int httpResponseCode = http.POST(httpRequestData)` mengirimkan permintaan POST ke server dengan data yang telah disiapkan.
+   * Menampilkan kode respons HTTP:
+     * Program menampilkan kode respons yang diterima dari server untuk mengetahui status pengiriman data.
+   * Menutup koneksi HTTP:
+     * `http.end()` menutup koneksi HTTP.
+   * Mencatat waktu pengiriman data terakhir:
+     * `lastTime = millis()` menyimpan waktu saat ini sebagai waktu terakhir pengiriman data.
+       
 Catatan:
-   * Kode ini menggunakan protokol MQTT.
-   * Metode yang digunakan adalah POST.
+   * Kode ini menggunakan metode POST untuk mengirimkan data ke server.
+   * Interval pengiriman data diatur dalam variabel `timerDelay` (5 detik dalam kode ini).
    * Data yang dikirimkan dalam format JSON.
-   * Server MQTT yang dituju adalah 192.168.1.7 pada port 1883.
-   * Interval pengiriman data diatur 10 detik dalam kode ini.
+   * Server yang dituju adalah `http://192.168.1.7:1880/flood/node1`.
+   * Kode ini dapat digunakan untuk mengirimkan data sensor atau informasi lain dari board Arduino ke server secara berkala.
